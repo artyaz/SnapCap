@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1EC98C129B1393800542B83 /* CaptureScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC98C029B1393800542B83 /* CaptureScreenshot.swift */; };
+		B1EC98C329B1435700542B83 /* EventListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC98C229B1435700542B83 /* EventListener.swift */; };
+		B1EC98C629B147A200542B83 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = B1EC98C529B147A200542B83 /* KeyboardShortcuts */; };
+		B1EC98C829B147AF00542B83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC98C729B147AF00542B83 /* Constants.swift */; };
+		B1EC98CA29B147C500542B83 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EC98C929B147C500542B83 /* PreferencesView.swift */; };
 		B1F21D7129ADF1150019436B /* Aplpha2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F21D7029ADF1150019436B /* Aplpha2App.swift */; };
 		B1F21D7329ADF1150019436B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F21D7229ADF1150019436B /* ContentView.swift */; };
 		B1F21D7529ADF1160019436B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F21D7429ADF1160019436B /* Assets.xcassets */; };
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1EC98C029B1393800542B83 /* CaptureScreenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureScreenshot.swift; sourceTree = "<group>"; };
+		B1EC98C229B1435700542B83 /* EventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListener.swift; sourceTree = "<group>"; };
+		B1EC98C729B147AF00542B83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B1EC98C929B147C500542B83 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		B1F21D6D29ADF1150019436B /* Aplpha2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aplpha2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F21D7029ADF1150019436B /* Aplpha2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aplpha2App.swift; sourceTree = "<group>"; };
 		B1F21D7229ADF1150019436B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1EC98C629B147A200542B83 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +105,15 @@
 		B1F21D6F29ADF1150019436B /* Aplpha2 */ = {
 			isa = PBXGroup;
 			children = (
+				B1EC98C229B1435700542B83 /* EventListener.swift */,
 				B1F21D7029ADF1150019436B /* Aplpha2App.swift */,
 				B1F21D7229ADF1150019436B /* ContentView.swift */,
+				B1EC98C029B1393800542B83 /* CaptureScreenshot.swift */,
 				B1F21D7429ADF1160019436B /* Assets.xcassets */,
 				B1F21D7929ADF1160019436B /* Aplpha2.entitlements */,
 				B1F21D7629ADF1160019436B /* Preview Content */,
+				B1EC98C729B147AF00542B83 /* Constants.swift */,
+				B1EC98C929B147C500542B83 /* PreferencesView.swift */,
 			);
 			path = Aplpha2;
 			sourceTree = "<group>";
@@ -145,6 +159,9 @@
 			dependencies = (
 			);
 			name = Aplpha2;
+			packageProductDependencies = (
+				B1EC98C529B147A200542B83 /* KeyboardShortcuts */,
+			);
 			productName = Aplpha2;
 			productReference = B1F21D6D29ADF1150019436B /* Aplpha2.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +234,9 @@
 				Base,
 			);
 			mainGroup = B1F21D6429ADF1150019436B;
+			packageReferences = (
+				B1EC98C429B147A200542B83 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
 			productRefGroup = B1F21D6E29ADF1150019436B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1EC98C829B147AF00542B83 /* Constants.swift in Sources */,
+				B1EC98CA29B147C500542B83 /* PreferencesView.swift in Sources */,
 				B1F21D7329ADF1150019436B /* ContentView.swift in Sources */,
 				B1F21D7129ADF1150019436B /* Aplpha2App.swift in Sources */,
+				B1EC98C329B1435700542B83 /* EventListener.swift in Sources */,
+				B1EC98C129B1393800542B83 /* CaptureScreenshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1EC98C429B147A200542B83 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1EC98C529B147A200542B83 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1EC98C429B147A200542B83 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B1F21D6529ADF1150019436B /* Project object */;
 }
